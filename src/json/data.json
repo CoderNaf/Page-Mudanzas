@@ -1,0 +1,22 @@
+[
+    {
+        "imagen": "./assets/icons/mudanza.svg",
+        "name": "mudanza",
+        "description": ""
+    },
+    {
+        "imagen": "./assets/icons/camion.svg",
+        "name": "trasteo",
+        "description": ""
+    },
+    {
+        "imagen": "./assets/icons/empaque.svg",
+        "name": "empaque",
+        "description": ""
+    },
+    {
+        "imagen": "./assets/icons/embalaje.svg",
+        "name": "embalaje",
+        "description": ""
+    }
+]
