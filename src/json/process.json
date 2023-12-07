@@ -1,22 +1,22 @@
 [
     {
         "icono" : "./assets/icons/1plans.svg",
-        "paso": "1. planificación",
+        "paso": "1.planificación y preparación",
         "copy": ""
     },
     {
         "icono" : "./assets/icons/plans2.svg",
-        "paso": "2. embalaje",
+        "paso": "2.embalaje rapido",
         "copy": ""
     },
     {
         "icono" : "./assets/icons/3plans.svg",
-        "paso": "3. trasporte eficiente",
+        "paso": "3.Transporte eficiente",
         "copy": ""
     },
     {
         "icono" : "./assets/icons/4plans.svg",
-        "paso": "4. comunicación continua",
+        "paso": "4.comunicación continua",
         "copy": ""
     }
 ]

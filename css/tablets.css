@@ -1,0 +1,90 @@
+.title-section--one h1{
+    font-size: 3.5rem;
+    margin-block: 1.5rem;
+    line-height: 3.5rem;
+}
+.title-section--one p{
+    margin-inline: 5rem;
+}
+
+/* section-two */
+
+.section-two--container .what-we-do{
+    margin-inline: 15rem;
+}
+
+.section-two--services {
+    grid-template-columns: repeat(2,1fr);
+}
+.section-three--container {
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+/* section-three */
+
+.section-four--container h3{
+    margin-inline: 15rem;
+}
+
+.article-section--four {
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* section-four */
+
+.section-five--container .section-five--info h2{
+    width:50%;
+}
+
+
+.section-six---container{
+    flex-direction: row;
+}
+.section-six--feedback {
+    width: 100%;
+}
+.section-six--feedback h3{
+    margin-right: 15rem;
+}
+.section-six--feedback div{
+    flex-direction: row;
+}
+
+.section-six--footer .section-six--container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    margin-left: 30rem;
+}
+.section-six--footer{
+    flex-direction: row;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color--one);
+    padding: 1rem .5rem;
+    align-items: center;
+}
+.nav-descktop{
+    display: flex;
+}
+.nav-descktop ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+.nav-descktop ul li{
+    color: #f2f5fa;
+    font-family:'Inter', sans-serif ;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.div-profaile--section-six{
+    margin: 0 auto;
+}
+

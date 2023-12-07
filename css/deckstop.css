@@ -1,0 +1,30 @@
+.title-section--one h1{
+    font-size: 4rem;
+    margin-block: 1.5rem;
+    line-height: 3.5rem;
+}
+.title-section--one p{
+    margin-inline: 12rem;
+}
+.section-one--form form {
+    flex-direction: row;
+}
+.section-two--container .what-we-do{
+    margin-inline: 25rem;
+}
+.section-two--services {
+    grid-template-columns: repeat(4,1fr);
+}
+.section-three--container {
+    align-items: center;
+}
+.section-three .section-three--paragraf button{
+    cursor: pointer;
+}
+.section-four--container h3{
+    margin-inline: 25rem;
+}
+.article-section--four {
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
