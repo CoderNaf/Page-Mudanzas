@@ -29,8 +29,8 @@ header{
 }
 
 header .logo{
-    width: 175px;
-    height: 38px;
+    width: 70px;
+    height: 50px;
 }
 
 /* section-one */
@@ -84,28 +84,28 @@ header .logo{
     max-width: 850px;
     margin: 0 auto;
 }
-
-.section-one--form form{
+.section-one--form form {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    padding:1.5rem ;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1.5rem;
     background-color: var(--color--two);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     gap: 1rem;
     top: -2.2rem;
     position: relative;
 }
-.section-one--form form input{
+.section-one--form form input {
     background-color: transparent;
-    border:none ;
+    border: none;
     border-bottom: solid 2px var(--color-white-on);
-    padding-bottom: .7rem;
-    border-radius:.2rem  ;
+    padding-bottom: 0.7rem;
+    border-radius: 0.2rem;
+    outline: none; /* Agrega esta línea para quitar el borde interno al enfocar el input */
 }
-.section-one--form form input::placeholder{
+.section-one--form form input::placeholder {
     color: var(--color-white-on);
     font-family: var(--font-inter);
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 .section-one--form form button{
@@ -114,7 +114,7 @@ header .logo{
     border-radius: .2rem;
     border: none;
     background-color: #FFD41C;
-    color: #222222;
+    color: var(--color-text-alternative);
     font-family: var(--font-DM-sanz);
     font-size: 1rem;
     font-weight: 500;
@@ -291,6 +291,7 @@ header .logo{
     margin-top: 2rem;
     border: solid 2px var(--color-white-off);
     border-radius: .5rem;
+    background-color: var(--color-white-on);
 }
 .article-section--four article img{
     display: inline-block;
@@ -328,6 +329,116 @@ header .logo{
     color: var(--color-white-on);
 }
 
+/* section-five */
 
+.section-five {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.section-five--container {
+    padding-inline: 1rem;
+}
+.section-five--info {
+    display: inline-block;
+    width: 100%;
+    height: 325px;
+    background-image: url('../assets/img/camion.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    border-radius:.5rem ;
+}
+.section-five--info h2{
+    font-size: 2rem;
+    font-family: var(--font-DM-sanz);
+    font-weight: 600;
+    color: var(--color-text-alternative);
+    text-transform: capitalize;
+    margin-top: 3rem;
+}
+.section-five--info button{
+    padding: .7rem;
+    margin-top: 1rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: #FFD41C;
+    color: var(--color-text-alternative);
+    font-family: var(--font-DM-sanz);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+}
 
+/* section-six */
 
+.section-six {
+    width: 100%;
+}
+.section-six---container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 980px;
+    gap: 1rem;
+}
+.section-six--feedback {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.section-six--feedback h3{
+    font-size: .8rem;
+    background-color: var(--color--buttons-a);
+    border-left:3px solid var(--color--four);
+    border-radius: .8rem;
+    padding: .8rem;
+    text-align: left;
+    margin-right: 10rem;
+    font-family: var(--font-inter);
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.section-six--feedback h2 {
+    font-size: 2rem;
+    font-family: var(--font-DM-sanz);
+}
+.section-six--feedback span{
+    display: inline-block;
+    width: 80px;
+    height: 5px;
+    background-color: var(--color--one);
+}
+.section-six--feedback div{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.section-six--feedback div h4{
+    font-size: 1.5rem;
+    font-family: var(--font-inter);
+    font-weight: 500;
+}
+.section-six--feedback div P{
+    font-size: 1rem;
+    font-family: var(--font-DM-sanz);
+    font-weight: 400;
+}
+.section-six--testimonials {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+.div-profaile--section-six {
+    background-color: var(--color--three);
+    padding: 1rem;
+    width:100%;
+    max-width: 340px;
+    height:auto;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
