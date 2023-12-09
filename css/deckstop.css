@@ -28,3 +28,7 @@
     grid-template-columns: repeat(4,1fr);
     gap: 1rem;
 }
+.section-six--footer{
+    display: flex;
+    justify-content: space-between;
+}
