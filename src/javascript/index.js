@@ -8,13 +8,13 @@ const titleModal = document.getElementById('titleModal')
 const paragrafModal = document.getElementById('paragrafModal')
 const buttonCloseModal = document.getElementById('close-button')
 
-
 const buttonWhatsApp = document.querySelector('.button-whatsApp').addEventListener('click', ()=>{
     const messageWhatsAppX = '¡Hola! Mi nombre es [ Tu Nombre ] y quiero más información sobre sus servicios'
     setTimeout(() => {
         window.open('http://wa.me/' + 573043171488  + "?text=" + encodeURIComponent(messageWhatsAppX));
     }, 200);
 })
+
 
 fetch(data)
     .then(response => response.json())

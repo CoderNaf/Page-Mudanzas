@@ -13,8 +13,6 @@
 
 }
 
-
-
 *{
     box-sizing:border-box;
     margin:0;
@@ -133,6 +131,12 @@ header .logo{
 .section-one--form form button span{
     vertical-align: -3px;
     margin-left: .5rem;
+}
+.section-one--form form input[type="date"]::placeholder {
+    color: var(--color-white-on);
+    font-family: var(--font-inter);
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 
@@ -647,14 +651,14 @@ header .logo{
 }
 .button-whatsApp{
     position: fixed;
-    top: 33rem;
-    right: .5rem;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
     background-color: var(--color--one);
     padding: .7rem;
-    border-radius: 50%;
+    border-radius: 70%;
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 .button-whatsApp span svg{
     width: 100%;
