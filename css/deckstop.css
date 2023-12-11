@@ -32,3 +32,8 @@
     display: flex;
     justify-content: space-between;
 }
+.button-whatsApp{
+    top: 38rem;
+    right: 1.5rem;
+    padding: 1rem;
+}

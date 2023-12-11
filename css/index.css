@@ -18,7 +18,8 @@
 *{
     box-sizing:border-box;
     margin:0;
-    padding:0;   
+    padding:0; 
+    position: relative;  
 }
 
 header{
@@ -86,7 +87,7 @@ header .logo{
 }
 .section-one--form{
     padding: 1rem;
-    max-width: 1150px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .section-one--form form {
@@ -98,6 +99,9 @@ header .logo{
     gap: 1rem;
     top: -2.2rem;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .section-one--form form input {
     background-color: transparent;
@@ -124,6 +128,7 @@ header .logo{
     font-size: 1rem;
     font-weight: 500;
     text-transform: capitalize;
+    cursor: pointer;
 }
 .section-one--form form button span{
     vertical-align: -3px;
@@ -352,6 +357,7 @@ header .logo{
     background-repeat: no-repeat;
     padding: 1rem;
     border-radius:.5rem ;
+    padding-left: 2rem;
 }
 .section-five--info h2{
     font-size: 2rem;
@@ -359,7 +365,7 @@ header .logo{
     font-weight: 600;
     color: var(--color-text-alternative);
     text-transform: capitalize;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 .section-five--info button{
     padding: .7rem;
@@ -414,11 +420,6 @@ header .logo{
     width: 80px;
     height: 5px;
     background-color: var(--color--one);
-}
-.section-six--feedback div{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
 }
 .section-six--feedback div h4{
     font-size: 1.8rem;
@@ -490,11 +491,30 @@ header .logo{
     color: var(--color-azul-off);
     font-weight: bold;
     margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+.section-six--container article h3 span{
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    background-color: var(--color--one);
+    margin-right: 7px;
+    border-radius: 3px;
 }
 .section-six--container article p{
     color: #898989;
     font-weight: 500;
     text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+.section-six--container article p span{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--color--one);
+    margin-right: 7px;
 }
 .section-six .footer-two{
     background-color: var(--color-text-alternative);
@@ -526,4 +546,117 @@ header .logo{
     border-radius: .7rem;
     text-transform: capitalize;
     cursor: pointer;
+}
+
+/* modals-popUps */
+
+.window-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    background-color:rgba(255,255,255,0.3);
+    z-index: 1;
+    display:none;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    padding: 1rem;
+}
+.window-container {
+    width: 100%;
+    position: relative;
+    max-width: 600px;
+    background-color: var(--color-white-on);
+    border-radius: .5rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    animation: modal .5s;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,.4);
+}
+@keyframes modal {
+    from{
+        transform: translateY(50vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.close{
+    transition: transform 1s cubic-bezier(0, -0.42, 1, -41);
+    transform: translateY(60vh);
+}
+.window-container h2, 
+.window-container p{
+    font-family: var(--font-DM-sanz);
+}
+.window-container h2{
+    font-size: 2.5rem;
+    color: var(--color-text-alternative);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color--one);
+}
+.window-container p{
+    font-size: 1.2rem;
+    color: var(--color-text-alternative);
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+}
+.window-container .button-info--modal{
+    padding: .7rem;
+    font-family: var(--font-DM-sanz);
+    background-color: var(--color--four);
+    color: var(--color-text-alternative);
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+.window-container .button-info--modal:hover{
+    box-shadow: 4px 4px 1px rgba(0,0,0,.4);
+    transition: .2s;
+}
+.window-container .button-info--modal:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}
+.close-button {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: var(--color--four);
+    border: solid 2px var(--color-white-on);
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.verModal{
+    cursor: pointer;
+    width: 40%;
+    margin: 0 auto;
+}
+.button-whatsApp{
+    position: fixed;
+    top: 33rem;
+    right: .5rem;
+    background-color: var(--color--one);
+    padding: .7rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.button-whatsApp span svg{
+    width: 100%;
+    max-width: 40px;
 }

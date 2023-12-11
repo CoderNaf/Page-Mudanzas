@@ -2,21 +2,21 @@
     {
         "imagen": "./assets/icons/mudanza.svg",
         "name": "mudanza",
-        "description": ""
+        "description": "Mudanza sin estrés: Tu nuevo comienzo inicia con nuestro servicio experto de mudanza, confiable y adaptado a tus necesidades únicas."
     },
     {
         "imagen": "./assets/icons/camion.svg",
         "name": "trasteo",
-        "description": ""
+        "description": "Trasteo sin complicaciones: Facilitamos el traslado de tus pertenencias con eficiencia y atención personalizada para un proceso sin contratiempos."
     },
     {
         "imagen": "./assets/icons/empaque.svg",
         "name": "empaque",
-        "description": ""
+        "description": "Empaque cuidadoso: Nuestro servicio de empaque garantiza la protección de tus posesiones, utilizando materiales de calidad y técnicas profesionales."
     },
     {
         "imagen": "./assets/icons/embalaje.svg",
         "name": "embalaje",
-        "description": ""
+        "description": "Embalaje seguro: Aseguramos la integridad de tus bienes con un embalaje seguro, proporcionando una capa adicional de protección para cada elemento valioso. Tu tranquilidad es nuestra prioridad."
     }
 ]

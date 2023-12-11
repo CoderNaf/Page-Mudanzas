@@ -1,22 +1,26 @@
 [
     {
         "icono" : "./assets/icons/1plans.svg",
+        "name": "Estrategias Eficientes",
         "paso": "1.planificación y preparación",
-        "copy": ""
+        "copy": "Inicia tu mudanza para tu nuevo hogar o una mudanza empresarial con éxito mediante una planificación meticulosa. Prepárate para un traslado eficiente y sin contratiempos"
     },
     {
         "icono" : "./assets/icons/plans2.svg",
+        "name" : "Rápido y Seguro",
         "paso": "2.embalaje rapido",
-        "copy": ""
+        "copy": "Protege tus objetos frágiles con nuestro especializado embalaje. Consejos prácticos para garantizar su seguridad durante la mudanza."
     },
     {
         "icono" : "./assets/icons/3plans.svg",
+        "name" : "Entrega Garantizada",
         "paso": "3.Transporte eficiente",
-        "copy": ""
+        "copy": "Conoce las mejores rutas y evita el tráfico. Nuestros expertos te guían para un transporte eficiente y sin contratiempos."
     },
     {
         "icono" : "./assets/icons/4plans.svg",
+        "name" : "Conexión Permanente",
         "paso": "4.comunicación continua",
-        "copy": ""
+        "copy": "Recibe actualizaciones en tiempo real sobre el progreso de tu mudanza. Transparencia y tranquilidad para ti en todo momento."
     }
 ]
