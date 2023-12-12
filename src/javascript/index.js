@@ -82,3 +82,20 @@ fetch(dataProcess)
         processFuncion();
     })
 
+
+    // formulario
+
+    const enviarC = document.querySelector('.cotiza').addEventListener('click',()=>{
+        const transporteDesde = document.getElementById('desde').value;
+        const transporteHasta = document.getElementById('hasta').value;
+        const fecha = document.getElementById('fecha').value;
+        const nombre = document.getElementById('nombre').value;
+        const numero = document.getElementById('numero').value;
+
+        const mensajeDeCotizacion = `Hola, mi nombre es ${nombre}. Me gustaría cotizar un servicio de mudanza y transporte para el día ${fecha}, desde ${transporteDesde} hasta ${transporteHasta}. Agradezco ponerse en contacto al siguiente número: ${numero}.`;
+
+        setTimeout(() => {
+            window.open('http://wa.me/' + 573043171488  + "?text=" + encodeURIComponent(mensajeDeCotizacion));
+        }, 350);
+
+    })
