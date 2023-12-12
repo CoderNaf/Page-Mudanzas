@@ -85,17 +85,29 @@ fetch(dataProcess)
 
     // formulario
 
-    const enviarC = document.querySelector('.cotiza').addEventListener('click',()=>{
+    const enviarC = document.querySelector('.cotiza').addEventListener('click', () => {
         const transporteDesde = document.getElementById('desde').value;
         const transporteHasta = document.getElementById('hasta').value;
         const fecha = document.getElementById('fecha').value;
         const nombre = document.getElementById('nombre').value;
         const numero = document.getElementById('numero').value;
-
+    
+        // Validar cada campo antes de continuar
+        if (!validarCampo(transporteDesde) || !validarCampo(transporteHasta) || !validarCampo(fecha) || !validarCampo(nombre) || !validarCampo(numero)) {
+            // Si algún campo no es válido, puedes mostrar un mensaje o realizar otra acción
+            alert("Todos los campos son obligatorios. Por favor, completa la información correctamente.");
+            return;
+        }
+    
         const mensajeDeCotizacion = `Hola, mi nombre es ${nombre}. Me gustaría cotizar un servicio de mudanza y transporte para el día ${fecha}, desde ${transporteDesde} hasta ${transporteHasta}. Agradezco ponerse en contacto al siguiente número: ${numero}.`;
-
+    
         setTimeout(() => {
-            window.open('http://wa.me/' + 573043171488  + "?text=" + encodeURIComponent(mensajeDeCotizacion));
+            window.open('http://wa.me/573043171488?text=' + encodeURIComponent(mensajeDeCotizacion));
         }, 350);
-
-    })
+    });
+    
+    function validarCampo(valor) {
+        // Puedes agregar lógica de validación más específica según tus necesidades
+        return valor.trim() !== ''; // Verifica que el campo no esté vacío
+    }
+    
