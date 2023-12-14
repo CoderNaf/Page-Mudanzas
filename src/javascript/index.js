@@ -1,3 +1,5 @@
+// const data
+
 const data = './src/json/data.json'
 const dataProcess = 'src/json/process.json'
 const container = document.querySelector('.section-two--services')
@@ -8,6 +10,15 @@ const titleModal = document.getElementById('titleModal')
 const paragrafModal = document.getElementById('paragrafModal')
 const buttonCloseModal = document.getElementById('close-button')
 
+// functions
+
+const logoFoter = document.getElementById('logo-footer').addEventListener('click',()=>{
+    window.location = '/index.html'
+})
+const buttonQuote = document.querySelector('.quote').addEventListener('click',()=>{
+    const form = document.querySelector('.section-one--picture')
+    form.scrollIntoView({behavior: 'smooth'})
+})
 const buttonWhatsApp = document.querySelector('.button-whatsApp').addEventListener('click', ()=>{
     const messageWhatsAppX = '¡Hola! Mi nombre es [ Tu Nombre ] y quiero más información sobre sus servicios'
     setTimeout(() => {
@@ -15,6 +26,8 @@ const buttonWhatsApp = document.querySelector('.button-whatsApp').addEventListen
     }, 200);
 })
 
+
+// ciclos
 
 fetch(data)
     .then(response => response.json())
@@ -104,10 +117,17 @@ fetch(dataProcess)
         setTimeout(() => {
             window.open('http://wa.me/573043171488?text=' + encodeURIComponent(mensajeDeCotizacion));
         }, 350);
+
+        setTimeout(()=>{
+            document.getElementById('desde').value = '';
+            document.getElementById('hasta').value = '';
+            document.getElementById('fecha').value = '';
+            document.getElementById('nombre').value = '';
+            document.getElementById('numero').value = '';
+        }, 400);
     });
     
     function validarCampo(valor) {
         // Puedes agregar lógica de validación más específica según tus necesidades
         return valor.trim() !== ''; // Verifica que el campo no esté vacío
     }
-    
