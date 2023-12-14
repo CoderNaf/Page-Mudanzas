@@ -143,12 +143,5 @@ fetch(dataProcess)
         sectionOne.scrollIntoView({behavior: 'smooth'})
     })
     const contactHeader = document.querySelector('.contactHeader').addEventListener('click',()=>{
-        const messageInfoModal = `Hola mi nombre es [Tu nombre], y estoy interesad@ en obtener más información sobre uno de sus servicios`
-                    const messageModalInfo = messageInfoModal;
-                    function messagueWhatsApp(){
-                        setTimeout(() => {
-                            window.open('http://wa.me/' + 573043171488  + "?text=" + encodeURIComponent(messageModalInfo));
-                        }, 350);
-                    }
-                    messagueWhatsApp();
+        window.location.href = './php/index.php'
     })
