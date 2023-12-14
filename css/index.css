@@ -249,7 +249,14 @@ header .logo{
     margin-top: .8rem;
     color: var(--color-text-alternative);
 }
-
+.verModal{
+    transition: .2s;
+    font-weight: 400;
+}
+.verModal:hover{
+    color: #BE3144;
+    transition: .2s;
+}
 /* section-four */
 
 .section-four {
@@ -331,7 +338,10 @@ header .logo{
     font-size: 1rem;
     font-weight: 400;
     cursor: pointer;
-    
+    transition: .2s;
+}
+.article-section--four article p:hover{
+    color: var(--color--two);
 }
 .article-section--four article:nth-child(1){
     background: radial-gradient(141.42% 141.42% at 100% 100%, #ad515fd7 0%, #872341 63%);

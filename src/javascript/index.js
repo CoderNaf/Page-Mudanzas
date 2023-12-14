@@ -131,3 +131,24 @@ fetch(dataProcess)
         // Puedes agregar lógica de validación más específica según tus necesidades
         return valor.trim() !== ''; // Verifica que el campo no esté vacío
     }
+
+    // menu
+
+    const testimonials = document.querySelector('.testimonials').addEventListener('click',()=>{
+        const testimonial = document.getElementById('js_widget')
+        testimonial.scrollIntoView({behavior: 'smooth'})
+    })
+    const home = document.querySelector('.home').addEventListener('click',()=>{
+        const sectionOne = document.getElementById('section-one')
+        sectionOne.scrollIntoView({behavior: 'smooth'})
+    })
+    const contactHeader = document.querySelector('.contactHeader').addEventListener('click',()=>{
+        const messageInfoModal = `Hola mi nombre es [Tu nombre], y estoy interesad@ en obtener más información sobre uno de sus servicios`
+                    const messageModalInfo = messageInfoModal;
+                    function messagueWhatsApp(){
+                        setTimeout(() => {
+                            window.open('http://wa.me/' + 573043171488  + "?text=" + encodeURIComponent(messageModalInfo));
+                        }, 350);
+                    }
+                    messagueWhatsApp();
+    })
