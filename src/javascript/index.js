@@ -145,3 +145,6 @@ fetch(dataProcess)
     const contactHeader = document.querySelector('.contactHeader').addEventListener('click',()=>{
         window.location.href = './php/index.php'
     })
+    const aboutUs = document.querySelector('.aboutUs').addEventListener('click',()=>{
+        window.location.href = './html/aboutme.html'
+    })

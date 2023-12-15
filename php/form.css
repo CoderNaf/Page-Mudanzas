@@ -38,6 +38,7 @@
     background-color:#333333;
     padding: 2rem;
     border-radius: .5rem;
+    width: 100%;
 }
 .section-form form div{
     display: flex;

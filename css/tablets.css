@@ -69,6 +69,7 @@ header{
 }
 .nav-descktop{
     display: flex;
+    z-index: 3;
 }
 .nav-descktop ul{
     display: flex;

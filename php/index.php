@@ -55,7 +55,17 @@ if(isset($_POST["form"])){
 </head>
 <body>
 
-
+    <div class="header-one">
+            <div>
+                <p>(+57) 3115386102</p>
+            </div>
+            <div>
+                <p>Info@Continentaldetrasteos.Com</p>
+            </div>
+            <div>
+                <p>Bogotá / Colombia</p>
+            </div>
+        </div>
     <header>
         <img src="../assets/logo/logoweb.gif" alt="" class="logo">
         <div class="container-menu"></div>

@@ -23,19 +23,42 @@
 header{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--color--one);
     padding: 1rem .5rem;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index:100;
+    top: 1.2rem;
 }
 
 header .logo{
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
+}
+.header-one{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: .7rem;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--color--two);
+}
+.header-one div p{
+    font-size: .5rem;
+    font-family: var(--font-DM-sanz);
+    color: var(--color-white-on);
 }
 
+.header-two{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+}
 .nav-descktop{
     display: none;
 }
@@ -45,7 +68,7 @@ header .logo{
 .section-one {
     width: 100%;
     background-color: var(--color-white-off);
-    padding-top: 5rem;
+    padding-top: 8rem;
 }
 .section-one--container {
     width: 100%;

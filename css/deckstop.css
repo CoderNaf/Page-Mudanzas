@@ -32,3 +32,17 @@
     display: flex;
     justify-content: space-between;
 }
+.header-one div p{
+    font-size: .7rem;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color--one);
+    padding: 1rem .5rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    top: 1.5rem;
+}
