@@ -1,0 +1,95 @@
+:root{
+    --color--one:#872341;
+    --color--two:#BE3144;
+    --color--two--alternative:#F05941;
+    --color--three:#eaf6ff;
+    --color--four:#FFD41C;
+    --color--buttons-a:#FFF5CB;
+    --color-white-off:#f2f5fa;
+    --color-white-on:#FFFF;
+    --color-text-alternative:#222222;
+    --font-DM-sanz:'DM Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0; 
+    position: relative;  
+}
+
+
+.section-about {
+    width: 100%;
+    padding-top: 6rem;
+    position: relative;
+}
+.section-about--container {
+    margin: 0 auto;
+    padding: .5rem;
+}
+.section-about--container div{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    padding: 2rem;
+    background-image: url('../assets/img/two-removal-company-workers-unloading-boxes-furniture-from-minibus_179755-15917.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display: grid;
+    align-items: center;
+    border-radius: .7rem;
+    overflow: hidden;
+}
+.section-about--container div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:linear-gradient(122deg, var(--color-white-on) 0%, #ffffff1e 100%); /* Fondo oscuro con 50% de opacidad */
+    z-index: 1;
+}
+
+.img-container h1{
+    z-index: 1;
+    color: var(--color--one);
+    font-family: var(--font-DM-sanz);
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.section-about--content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.section-about--content h3 {
+    font-weight: 600;
+    font-family: var(--font-DM-sanz);
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--color--two);
+}
+.section-about--content img {
+    width: 100%;
+}
+.section-about--content  {
+    font-family: var(--font-inter);
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.section-about--content article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+
+}
