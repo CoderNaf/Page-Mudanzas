@@ -87,4 +87,9 @@ header{
 .div-profaile--section-six{
     margin: 0 auto;
 }
-
+.section-about-services--container {
+    grid-template-columns: repeat(2,1fr);
+}
+.section-about--container div{
+    height: 180px;
+}

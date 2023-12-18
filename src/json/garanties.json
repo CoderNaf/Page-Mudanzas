@@ -1,0 +1,22 @@
+[
+    {
+        "imagen" : "../assets/icons/objetivo.png",
+        "titulo" : "Nuestra Misión",
+        "parrafo" : "Más de 26 años de experiencia en mudanzas y traslado de muebles. Seriedad, cumplimiento y dedicación garantizados."
+    },
+    {
+        "imagen" : "../assets/icons/telemarketing.png",
+        "titulo" : "Servicio al cliente",
+        "parrafo" : "Atendemos con excelencia cada necesidad. Cliente satisfecho es nuestra misión cumplida. Su tranquilidad, nuestra prioridad."
+    },
+    {
+        "imagen" : "../assets/icons/caja.png",
+        "titulo" : "expertos en mudanzas",
+        "parrafo" : "Mudanzas seguras y sin preocupaciones. Cuidamos cada detalle para garantizar la seguridad de sus pertenencias."
+    },
+    {
+        "imagen" : "../assets/icons/24-horas.png",
+        "titulo" : "Servicios 24/7",
+        "parrafo" : "Disponibles las 24 horas, 7 días a la semana. Siempre listos para atender sus necesidades con rapidez y eficiencia."
+    }
+]
