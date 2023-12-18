@@ -148,3 +148,7 @@ fetch(dataProcess)
     const aboutUs = document.querySelector('.aboutUs').addEventListener('click',()=>{
         window.location.href = './html/aboutme.html'
     })
+    const portfolio = document.querySelector('.portfolio').addEventListener('click',()=>{
+        window.open('https://portafolio.continentaldetrasteos.com/')
+        window.close()
+    })

@@ -73,7 +73,7 @@ if(isset($_POST["form"])){
             <ul>
                 <li class="home">home</li>
                 <li id="about">about us</li>
-                <li>portafolio</li>
+                <li id="portafolio">portafolio</li>
                 <li class="testimonials">testimonials</li>
             </ul>
         </nav>

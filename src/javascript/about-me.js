@@ -34,4 +34,7 @@ fetch(aboutGaranties)
         window.location.href = '../php/index.php'
     })
 
-    
+    const portafolio = document.getElementById('portfolio').addEventListener('click',()=>{
+        window.open('https://portafolio.continentaldetrasteos.com/')
+        window.close();
+    })

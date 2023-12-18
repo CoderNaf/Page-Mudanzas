@@ -8,3 +8,8 @@ const testimonials = document.querySelector('.testimonials').addEventListener('c
 const about = document.getElementById('about').addEventListener('click',()=>{
     window.location.href = '../html/aboutme.html'
 })
+
+const portafolio = document.getElementById('click',()=>{
+    window.open('https://portafolio.continentaldetrasteos.com/')
+    window.close()
+})
