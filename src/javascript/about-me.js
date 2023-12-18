@@ -1,6 +1,7 @@
 const aboutGaranties = '../src/json/garanties.json';
 const divContain = document.getElementById('divContainer');
 
+
 fetch(aboutGaranties)
     .then(response => response.json())
     .then(garantias => {
@@ -18,3 +19,19 @@ fetch(aboutGaranties)
         }
         garantiesFor();
     });
+
+    // menu 
+
+    const home = document.getElementById('home').addEventListener('click', ()=>{
+        window.location.href = '../index.html'
+    })
+
+    const testimonials = document.getElementById('testimonials').addEventListener('click',()=>{
+        window.location.href = '../index.html#section-six' 
+    })
+
+    const contact = document.getElementById('contact').addEventListener('click',()=>{
+        window.location.href = '../php/index.php'
+    })
+
+    

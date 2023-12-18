@@ -55,3 +55,11 @@ header{
 .section-about--container div{
     height: 250px;
 }
+.section-galery--content {
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.section-galer--info button{
+    width:40% ;
+}

@@ -93,3 +93,7 @@ header{
 .section-about--container div{
     height: 180px;
 }
+.section-galer--info button{
+    margin-top: 1rem;
+    width:30% ;
+}

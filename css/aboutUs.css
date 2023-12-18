@@ -34,7 +34,7 @@
     width: 100%;
     height: 100px;
     padding: 2rem;
-    background-image: url('../assets/img/two-removal-company-workers-unloading-boxes-furniture-from-minibus_179755-15917.jpg');
+    background-image: url('../assets/img/Section.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover ;
@@ -152,8 +152,8 @@
 }
 .section-galery--content {
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     max-width: 1200px;
     padding: 1rem;
 }
@@ -170,22 +170,22 @@
 }
 .section-galery--pictures img:nth-child(1){
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     grid-area: 1 / 1 / 3 / 4;
 }
 .section-galery--pictures img:nth-child(2){
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     grid-area: 3 / 1 / 6 / 4; 
 }
 .section-galery--pictures img:nth-child(3){
     width: 100%;
-    max-width: 300px;
+    max-width:400px;
     grid-area: 2 / 4 / 4 / 6
 }
 .section-galery--pictures img:nth-child(4){
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     grid-area: 4 / 4 / 6 / 6;
 }
 .section-galer--info {
@@ -204,6 +204,7 @@
     border-radius: .7rem;
     border-left: 3px solid var(--color--four);
     text-transform: capitalize;
+    margin-top: 1.5rem;
 }
 .section-galer--info h2{
     font-family: var(--font-inter);
@@ -222,10 +223,22 @@
     background-color: var(--color--two);
 }
 .section-galer--info p{
-    font-size: 1.2rem;
     font-family: var(--font-inter);
+    font-size: 1rem;
     color: var(--color-text-alternative);
-    font-weight: 400;
+}
+.section-galer--info button{
+    padding: 1rem;
+    width: 70%;
+    background-color: var(--color--four);
+    color: var(--color-text-alternative);
+    font-size: 1rem;
+    font-family: var(--font-DM-sanz);
+    text-transform: capitalize;
+    font-weight: 600;
+    border: none;
+    border-radius: .7rem;
+    cursor: pointer;
 }
 
 
