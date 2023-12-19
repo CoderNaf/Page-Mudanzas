@@ -1,5 +1,8 @@
 const aboutGaranties = '../src/json/garanties.json';
-const divContain = document.getElementById('divContainer');
+const buttonClose = document.querySelector('.menu-mobile-icon')
+const buttonOpen = document.getElementById('icon-menu')
+const mobile1 = document.querySelector('.mobile-menu')
+const divContain = document.getElementById('divContainer')
 
 
 fetch(aboutGaranties)
@@ -37,4 +40,30 @@ fetch(aboutGaranties)
     const portafolio = document.getElementById('portfolio').addEventListener('click',()=>{
         window.open('https://portafolio.continentaldetrasteos.com/')
         window.close();
+    })
+
+    const buttonQuorer = document.getElementById('button-quorer').addEventListener('click',()=>{
+        window.location.href = '../php/index.php'
+    })
+    const politicas = document.querySelector('.Qukies').addEventListener('click',()=>{
+        window.location.href = '../html/politica.html'
+    })
+    const homeMobile = document.querySelector('.homeMobile').addEventListener('click', ()=>{
+        window.location.href = '../index.html'
+    })
+    const potfolioMobile = document.querySelector('.portfolioMobile').addEventListener('click',()=>{
+        window.open('https://portafolio.continentaldetrasteos.com/')
+        window.close();
+    })
+    const testimonialsMobile = document.querySelector('.testimonialsMobile').addEventListener('click',()=>{
+        window.location.href = '../index.html#section-six'
+    })
+    const contactMobile = document.querySelector('.contactUsMobile').addEventListener('click',()=>{
+        window.location.href = '../php/index.php'
+    })
+    buttonClose.addEventListener('click',()=>{
+        mobile1.style.display = 'none'
+    })
+    buttonOpen.addEventListener('click',()=>{
+        mobile1.style.display = 'flex'
     })

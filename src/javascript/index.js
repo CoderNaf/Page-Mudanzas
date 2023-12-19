@@ -9,6 +9,9 @@ const modalContainer = document.getElementById ('window-container')
 const titleModal = document.getElementById('titleModal')
 const paragrafModal = document.getElementById('paragrafModal')
 const buttonCloseModal = document.getElementById('close-button')
+const buttonCloseMenu = document.querySelector('.menu-mobile-icon')
+const menuMobile = document.querySelector('.mobile-menu')
+const buttonOpenMenu = document.getElementById('icon-menu')
 
 // functions
 
@@ -151,4 +154,38 @@ fetch(dataProcess)
     const portfolio = document.querySelector('.portfolio').addEventListener('click',()=>{
         window.open('https://portafolio.continentaldetrasteos.com/')
         window.close()
+    })
+    const buttonQuorer = document.getElementById('buttonQuorer').addEventListener('click', ()=>{
+        window.open('https://portafolio.continentaldetrasteos.com/')
+        window.close()
+    })
+    
+    const politicas = document.querySelector('.Qukies').addEventListener('click',()=>{
+        window.location.href = './html/politica.html'
+    })
+    buttonCloseMenu.addEventListener('click',()=>{
+        menuMobile.style.display = 'none'
+    })
+    buttonOpenMenu.addEventListener('click',()=>{
+        menuMobile.style.display = 'flex'
+    })
+    const homeMobile = document.querySelector('.homeMobile').addEventListener('click',()=>{
+        const sectionOne = document.getElementById('section-one')
+        sectionOne.scrollIntoView({behavior: 'smooth'})
+        menuMobile.style.display = 'none'
+    })
+    const aboutUsMobile = document.querySelector('.aboutUsMobile').addEventListener('click',()=>{
+        window.location.href = './html/aboutme.html'
+    })
+    const portafolioMobile = document.querySelector('.portfolioMobile').addEventListener('click',()=>{
+        window.open('https://portafolio.continentaldetrasteos.com/')
+        window.close()
+    })
+    const testimonialMobile = document.querySelector('.testimonialsMobile').addEventListener('click',()=>{
+        const testimonial = document.getElementById('js_widget')
+        testimonial.scrollIntoView({behavior: 'smooth'})
+        menuMobile.style.display = 'none'
+    })
+    const contactoMobile = document.querySelector('.contactUsMobile').addEventListener('click',()=>{
+        window.location.href = './php/index.php'
     })

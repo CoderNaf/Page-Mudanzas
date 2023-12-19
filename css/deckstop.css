@@ -63,3 +63,9 @@ header{
 .section-galer--info button{
     width:40% ;
 }
+#icon-menu{
+    display: none;
+}
+.nav-descktop{
+    display: flex;
+}

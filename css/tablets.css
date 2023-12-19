@@ -97,3 +97,6 @@ header{
     margin-top: 1rem;
     width:30% ;
 }
+.nav-descktop{
+    display: none;
+}

@@ -19,11 +19,67 @@
     padding:0; 
     position: relative;  
 }
-
+.mobile-menu{
+    position: relative;
+    display: none;
+}
+.menu-mobile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    z-index: 300;
+    backdrop-filter: blur(4px);
+    background-color:rgba(255,255,255,0.3);
+} 
+.menu-mobile--content{
+    height: 100vh;
+    background-color: var(--color-white-on);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: fixed;
+    margin: 0 auto;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+.menu-mobile-icon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.menu-mobile--content nav{
+    position: relative;
+}
+.menu-mobile--content nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menu-mobile--content nav ul li{
+    font-family: var(--font-DM-sanz);
+    text-transform: capitalizea;
+    padding: .7rem;
+    right: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.menu-mobile--content nav ul li span{
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-color: #BE3144;
+    margin-right: 10px;
+    border-radius: .2rem;
+}
 header{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--color--one);
     padding: 1rem .5rem;
     position: fixed;
@@ -546,7 +602,7 @@ header .logo{
 .section-six--container article p{
     color: #898989;
     font-weight: 500;
-    text-transform: capitalize;
+
     display: flex;
     align-items: center;
 }
@@ -700,4 +756,39 @@ header .logo{
 .button-whatsApp span svg{
     width: 100%;
     max-width: 40px;
+}
+.Qukies{
+    cursor: pointer;
+}
+.Qukies:hover{
+    color: var(--color-text-alternative);
+}
+
+/* politicas y tratamiento de datos */
+
+.politicas {
+    width: 100%;
+    padding-top: 7rem;
+}
+.section-politicas-content {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+.politica--content {
+    display: flex;
+    flex-direction: column;
+}
+.section-politicas-content .politica-title{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-DM-sanz);
+    text-transform: capitalize;
+}
+.politica--content p{
+    font-family: var(--font-inter);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-transform: none;
 }

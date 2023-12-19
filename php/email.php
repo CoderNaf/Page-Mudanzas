@@ -11,14 +11,14 @@ function sendMail($subject, $body, $email, $name, $html = false){
     $mail->isSMTP();
     $mail->Host       = 'smtp.hostinger.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'tu_usuario_smtp'; // Reemplaza con tu nombre de usuario SMTP
-    $mail->Password   = 'tu_contraseña_smtp'; // Reemplaza con tu contraseña SMTP
+    $mail->Username   = 'info@continentaldetrasteos.com'; // Reemplaza con tu nombre de usuario SMTP
+    $mail->Password   = 'Continental2024.'; // Reemplaza con tu contraseña SMTP
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     
     // Destinatarios
-    $mail->setFrom('admisiones@campbellgr.com', 'Equipo de CampbellGr');
-    $mail->addAddress('produccionesbog@gmail.com', 'Equipo de CampbellGr');
+    $mail->setFrom('info@continentaldetrasteos.com', 'Equipo continental');
+    $mail->addAddress('produccionesbog@gmail.com', 'Equipo continental');
 
     // Cuerpo del correo
     $mail->isHtml($html);

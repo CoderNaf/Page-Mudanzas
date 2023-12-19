@@ -1,0 +1,26 @@
+{
+  "name": "mudanzas",
+  "version": "1.0.0",
+  "description": "página web, continental de trasteos",
+  "main": "index.js",
+  "scripts": {
+    "test": "continental de trasteos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderNaf/Page-Mudanzas.git"
+  },
+  "keywords": [
+    "trasteos",
+    "mudanzas",
+    "transporte",
+    "embalaje",
+    "empaque."
+  ],
+  "author": "Fabian dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderNaf/Page-Mudanzas/issues"
+  },
+  "homepage": "https://github.com/CoderNaf/Page-Mudanzas#readme"
+}
