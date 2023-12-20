@@ -41,7 +41,7 @@ fetch(data)
                 const date = document.createElement('div');
                 date.innerHTML = `<img src="${item.imagen}" alt="">
                 <h3>${item.name}</h3>
-                <p class="verModal">ver mas</p>`;
+                <p class="verModal">Ver más</p>`;
 
                 // Almacena el nombre del servicio antes de agregar el evento
                 const serviceName = item.name;
@@ -83,7 +83,7 @@ fetch(dataProcess)
                 const createItems = document.createElement ('article')
                 createItems.innerHTML = `<img src="${processItems.icono}" alt="">
                 <h2>${processItems.paso}</h2>
-                <p class="verInfoModalTwo">conoce mas</p>`;
+                <p class="verInfoModalTwo">Conoce más</p>`;
 
                 const buttonInfoModal = createItems.querySelector('.verInfoModalTwo').addEventListener('click',()=>{
                     modal.style.display = 'flex'
