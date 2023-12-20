@@ -28,7 +28,7 @@
     height: 100vh;
     display: flex;
     position: fixed;
-    z-index: 300;
+    z-index: 10;
     backdrop-filter: blur(4px);
     background-color:rgba(255,255,255,0.3);
 } 
@@ -84,7 +84,7 @@ header{
     padding: 1rem .5rem;
     position: fixed;
     top: 0;
-    z-index:100;
+    z-index:2;
     top: 1.2rem;
 }
 
@@ -99,8 +99,8 @@ header .logo{
     padding: .5rem;
     margin-bottom: .7rem;
     position: fixed;
-    z-index: 100;
-    background-color: var(--color--two);
+    z-index: 2;
+    background-color: #BE3144;
 }
 .header-one div p{
     font-size: .5rem;
@@ -113,7 +113,7 @@ header .logo{
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    z-index: 3;
+    z-index: 1;
 }
 .nav-descktop{
     display: none;
@@ -654,7 +654,7 @@ header .logo{
     left: 0;
     backdrop-filter: blur(4px);
     background-color:rgba(255,255,255,0.3);
-    z-index: 2;
+    z-index: 999;
     display:none;
     align-items: center;
     justify-items: center;
