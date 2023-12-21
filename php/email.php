@@ -18,7 +18,7 @@ function sendMail($subject, $body, $email, $name, $html = false){
     
     // Destinatarios
     $mail->setFrom('info@continentaldetrasteos.com', 'Equipo continental');
-    $mail->addAddress('produccionesbog@gmail.com', 'Equipo continental');
+    $mail->addAddress('info@continentaldetrasteos.com', 'Equipo continental');
 
     // Cuerpo del correo
     $mail->isHtml($html);

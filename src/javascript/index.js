@@ -23,9 +23,9 @@ const buttonQuote = document.querySelector('.quote').addEventListener('click',()
     form.scrollIntoView({behavior: 'smooth'})
 })
 const buttonWhatsApp = document.querySelector('.button-whatsApp').addEventListener('click', ()=>{
-    const messageWhatsAppX = '¡Hola! Mi nombre es [ Tu Nombre ] y quiero más información sobre sus servicios'
+    const messageWhatsAppX = '¡Hola! He visto su página web y me gustaría obtener más información sobre sus servicios. Mi nombre es: [Tu nombre].'
     setTimeout(() => {
-        window.open('http://wa.me/' + 573043171488  + "?text=" + encodeURIComponent(messageWhatsAppX));
+        window.open('http://wa.me/' + 573115386102  + "?text=" + encodeURIComponent(messageWhatsAppX));
     }, 200);
 })
 
@@ -57,7 +57,7 @@ fetch(data)
                     const messageModalInfo = messageInfoModal;
                     function messagueWhatsApp(){
                         setTimeout(() => {
-                            window.open('http://wa.me/' + 573043171488  + "?text=" + encodeURIComponent(messageModalInfo));
+                            window.open('http://wa.me/' + 573115386102  + "?text=" + encodeURIComponent(messageModalInfo));
                         }, 350);
                     }
                     messagueWhatsApp();
@@ -118,7 +118,7 @@ fetch(dataProcess)
         const mensajeDeCotizacion = `Hola, mi nombre es ${nombre}. Me gustaría cotizar un servicio de mudanza y transporte para el día ${fecha}, desde ${transporteDesde} hasta ${transporteHasta}. Agradezco ponerse en contacto al siguiente número: ${numero}.`;
     
         setTimeout(() => {
-            window.open('http://wa.me/573043171488?text=' + encodeURIComponent(mensajeDeCotizacion));
+            window.open('http://wa.me/573115386102?text=' + encodeURIComponent(mensajeDeCotizacion));
         }, 350);
 
         setTimeout(()=>{
