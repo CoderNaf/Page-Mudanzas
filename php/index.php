@@ -83,6 +83,11 @@ if(isset($_POST["form"])){
             <div>
                 <p>Bogotá / Colombia</p>
             </div>
+            <div class="social-media">
+                <span class="facebook redSocial"></span>
+                <span class="instagram redSocial"></span>
+                <span class="whatsapp redSocial"></span>
+            </div>
         </div>
         <header>
 
