@@ -83,9 +83,8 @@ header{
     background-color: var(--color--one);
     padding: 1rem .5rem;
     position: fixed;
-    top: 0;
     z-index:2;
-    top: 1.2rem;
+    margin-top: 1.8rem;
 }
 
 header .logo{
@@ -95,17 +94,44 @@ header .logo{
 .header-one{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     padding: .5rem;
-    margin-bottom: .7rem;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background-color: #BE3144;
 }
 .header-one div p{
-    font-size: .5rem;
+    font-size: .3rem;
     font-family: var(--font-DM-sanz);
     color: var(--color-white-on);
+}
+.social-media{
+    display: flex;
+    gap: .7rem;
+}
+.redSocial{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+.facebook{
+    background-image: url(/Page-Mudanzas/assets/icons/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.instagram{
+    background-image: url(/Page-Mudanzas/assets/icons/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.whatsapp{
+    background-image: url(/Page-Mudanzas/assets/icons/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .header-two{
@@ -114,6 +140,8 @@ header .logo{
     width: 100%;
     justify-content: space-between;
     z-index: 1;
+    padding-inline: 1.5rem;
+   
 }
 .nav-descktop{
     display: none;
@@ -164,7 +192,8 @@ header .logo{
 .section-one--picture img{
     width:100%;
     margin: 0 auto;
-    padding-block: 3rem;
+    margin-bottom: 2rem;
+    /* padding-block: rem; */
 }
 .section-one--form{
     padding: 1rem;
@@ -191,6 +220,8 @@ header .logo{
     padding-bottom: 0.7rem;
     border-radius: 0.2rem;
     outline: none; /* Agrega esta línea para quitar el borde interno al enfocar el input */
+    opacity: 60%;
+    color: var(--color-white-on);
 }
 .section-one--form form input::placeholder {
     color: var(--color-white-on);
@@ -299,15 +330,19 @@ header .logo{
     display: grid;
     grid-template-columns: repeat(1,1fr);
 }
+.section-three--container picture{
+    display: flex;
+    justify-self: center;
+}
 .section-three--container picture img{
     width: 100%;
-    max-width: 600px;
+    max-width: 370px;
 }
 
 .section-three--paragraf h2{
     margin-top: 2rem;
     font-family: var(--font-DM-sanz);
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 .section-three--paragraf h2 span{

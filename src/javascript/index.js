@@ -12,6 +12,9 @@ const buttonCloseModal = document.getElementById('close-button')
 const buttonCloseMenu = document.querySelector('.menu-mobile-icon')
 const menuMobile = document.querySelector('.mobile-menu')
 const buttonOpenMenu = document.getElementById('icon-menu')
+const facebook = document.querySelector('.facebook')
+const instagram = document.querySelector('.instagram')
+const iconWhatsapp = document.querySelector('.whatsapp')
 
 // functions
 
@@ -188,4 +191,17 @@ fetch(dataProcess)
     })
     const contactoMobile = document.querySelector('.contactUsMobile').addEventListener('click',()=>{
         window.location.href = './php/index.php'
+    })
+
+    // header one
+    facebook.addEventListener('click',()=>{
+        window.open('https://www.facebook.com/Continentaldetrasteos')
+    })
+    instagram.addEventListener('click',()=>{
+        window.open('https://www.instagram.com/continentaldetrasteos/')
+    })
+    iconWhatsapp.addEventListener('click',()=>{
+        const messageInfoModal = `Hola mi nombre es [Tu nombre], y estoy interesad@ en obtener más información sobre uno de sus servicios`
+        window.open('http://wa.me/' + 573115386102  + "?text=" + encodeURIComponent(messageInfoModal));
+        
     })
